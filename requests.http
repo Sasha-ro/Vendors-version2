@@ -1,0 +1,60 @@
+### Create Vendor
+POST http://localhost:4004/odata/v4/catalog/Vendors
+Content-Type: application/json
+
+{
+  "ID": "66666666-6666-6666-6666-666666666666",
+  "name": "New Vendor"
+}
+
+### Read All Vendors
+GET http://localhost:4004/odata/v4/catalog/Vendors
+
+### Read One Vendor
+GET http://localhost:4004/odata/v4/catalog/Vendors/11111111-1111-1111-1111-111111111111
+
+### Update Vendor
+PATCH http://localhost:4004/odata/v4/catalog/Vendors/11111111-1111-1111-1111-111111111111
+Content-Type: application/json
+
+{
+  "name": "Acme Corp Updated"
+}
+
+### Delete Vendor
+DELETE http://localhost:4004/odata/v4/catalog/Vendors/11111111-1111-1111-1111-111111111111
+
+### Create Product
+POST http://localhost:4004/odata/v4/catalog/Products
+Content-Type: application/json
+
+{
+  "ID": "77777777-7777-7777-7777-777777777777",
+  "name": "New Product",
+  "price": 80.00,
+  "discount": 10.00,
+  "vendor_ID": "22222222-2222-2222-2222-222222222222"
+}
+
+### Read All Products
+GET http://localhost:4004/odata/v4/catalog/Products
+
+### Read One Product
+GET http://localhost:4004/odata/v4/catalog/Products/33333333-3333-3333-3333-333333333333
+
+### Update Product
+PATCH http://localhost:4004/odata/v4/catalog/Products/33333333-3333-3333-3333-333333333333
+Content-Type: application/json
+
+{
+  "name": "Widget A Updated"
+}
+
+### Delete Product
+DELETE http://localhost:4004/odata/v4/catalog/Products/33333333-3333-3333-3333-333333333333
+
+### Call Unbound Action: countEntities
+POST http://localhost:4004/odata/v4/catalog/countEntities
+Content-Type: application/json
+
+{}

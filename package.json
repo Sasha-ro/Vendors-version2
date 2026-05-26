@@ -1,0 +1,36 @@
+{
+  "name": "vendors_version2",
+  "version": "1.0.0",
+  "dependencies": {
+    "@cap-js/sqlite": "^2.4.0",
+    "@sap/cds": "^9.9.1"
+  },
+  "devDependencies": {
+    "@sap/cds-dk": "^9.9.1",
+    "cds-plugin-ui5": "^0.17.0"
+  },
+  "scripts": {
+    "start": "cds-serve",
+    "watch-app": "cds watch --open app/index.html?sap-ui-xx-viewCache=false --livereload false",
+    "watch-project1": "cds watch --open project1/index.html?sap-ui-xx-viewCache=false --livereload false"
+  },
+  "private": true,
+  "workspaces": [
+    "app/*"
+  ],
+  "sapux": [
+    "app",
+    "app/project1"
+  ],
+  "cds": {
+    "requires": {
+      "db": {
+        "kind": "sqlite",
+        "impl": "@cap-js/sqlite",
+        "credentials": {
+          "url": "db/vendors_version2.db"
+        }
+      }
+    }
+  }
+}
