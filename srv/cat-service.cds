@@ -15,7 +15,7 @@ service CatalogService {
     }
     actions {
       // Bound action to get a short review for a vendor (returns plain text)
-      action vendorReviews(vendor: Vendors) returns String;
+      action vendorReviews() returns String;
     };
 
   // Expose Products (includes vendor association which is to-one)
