@@ -11,7 +11,8 @@ service CatalogService {
   entity Vendors  as
     projection on db.Vendors {
       ID,
-      name
+      name,
+      reviews
     }
     actions {
       // Bound action to get a short review for a vendor (returns plain text)
