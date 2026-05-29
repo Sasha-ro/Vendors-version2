@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "dependencies": {
     "@cap-js/sqlite": "^2.4.0",
+    "@sap-ai-sdk/orchestration": "^2.11.0",
     "@sap/cds": "^9.9.1"
   },
   "devDependencies": {

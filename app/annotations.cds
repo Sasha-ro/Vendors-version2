@@ -9,6 +9,12 @@ annotate service.Vendors with @(
                 Label : 'name',
                 Value : name,
             }
+            ,
+            {
+                $Type : 'UI.DataField',
+                Label : 'Reviews',
+                Value : reviews,
+            }
         ]
     },
     UI.Facets : [
@@ -24,6 +30,11 @@ annotate service.Vendors with @(
             $Type : 'UI.DataField',
             Label : 'name',
             Value : name,
+        },
+        {
+            $Type : 'UI.DataField',
+            Label : 'Reviews',
+            Value : reviews,
         },
         {
             $Type : 'UI.DataFieldForAction',
